@@ -1,0 +1,79 @@
+# Editor and local settings
+.vscode/
+.idea/
+.qtenvrc
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# Build outputs and compiled files
+build/
+out/
+cmake-build-*/
+*.o
+*.a
+*.so
+*.so.*
+*.dll
+*.exe
+*.class
+*.d
+*.mk
+
+# OMNeT++ simulation outputs
+simulation/config/results/
+*.sca
+*.vec
+*.vci
+*.elog
+*.anf
+*.eventlog
+*.log
+*.tmp
+
+# Generated SUMO outputs
+*.rou.alt.xml
+*.tripinfo.xml
+*.emission.xml
+*.fcd.xml
+*.netstate.xml
+
+# Credentials and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+id_rsa
+id_ed25519
+
+# Large archives and downloaded binaries
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.rar
+*.iso
+*.deb
+*.AppImage
+*.onnx
+*.pt
+*.pth
+*.weights
+*.engine
+
+# OS files
+.DS_Store
+Thumbs.db
