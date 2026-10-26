@@ -17,7 +17,39 @@ This project aims to develop a machine learning-based security framework that an
 - Explore secure mitigation strategies through Roadside Units.
 - Build a dashboard for visualizing network behavior and detection results.
 
+
 ## System Architecture
+
+```mermaid
+flowchart TD
+    A["SUMO: Vehicle Mobility"]
+    B["OMNeT++ + Veins: Network Simulation"]
+    C["Vehicle Security Application"]
+    D["Feature Extraction"]
+    E["Random Forest: Attack Classification"]
+    F["RSU: Trust Evaluation"]
+    G["Secure Mitigation"]
+    H["Monitoring Dashboard"]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    E --> H
+    G --> H
+
+    classDef implemented fill:#d1fae5,stroke:#047857,color:#064e3b
+    classDef planned fill:#fef3c7,stroke:#b45309,color:#78350f
+
+    class A,B implemented
+    class C,D,F,G,H planned
+    class E planned
+```
+
+**Status note:** The diagram represents the intended architecture. The simulation configuration and synthetic-data Random Forest baseline exist, but the complete security pipeline has not yet been integrated. Update the diagram as components are implemented and tested.
+
 
 The proposed workflow is:
 
