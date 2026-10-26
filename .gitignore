@@ -77,3 +77,14 @@ id_ed25519
 # OS files
 .DS_Store
 Thumbs.db
+
+# Generated ML datasets
+dataset/raw/
+dataset/processed/
+
+# Trained models
+*.joblib
+*.pkl
+
+# Generated ML evaluation outputs
+results/
